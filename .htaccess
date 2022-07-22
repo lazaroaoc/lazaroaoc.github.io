@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+## Force SSL and WWW
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.clinicasortega.com/*$ [R,L]
+Redirect 301 /https://www.clinicasortega.com/$* /https://www.clinicasortega.com
+
+
+
+
+
+
